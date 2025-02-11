@@ -7,7 +7,7 @@ namespace LuminaBrain.EntityFrameworkCore;
 
 public static class ServiceExtensions
 {
-    public static IServiceCollection AddFastWikiDbContext(this IServiceCollection services)
+    public static IServiceCollection AddLuminaBrainContext(this IServiceCollection services)
     {
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IRoleRepository, RoleRepository>();

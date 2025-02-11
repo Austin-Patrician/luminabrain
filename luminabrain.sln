@@ -14,6 +14,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminaBrain.Data", "LuminaB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminadBrain.Entity", "LuminadBrain.Entity\LuminadBrain.Entity.csproj", "{E47A5831-634D-4C7E-B0CB-C821C66D5DFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminaBrain.EntityFramework.SqlServer", "LuminaBrain.EntityFramework.SqlServer\LuminaBrain.EntityFramework.SqlServer.csproj", "{29C11F24-7F08-4CB9-B8F9-3DE69DA6CFD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminaBrain.EntityFrameCore.PostgreSql", "LuminaBrain.EntityFrameCore.PostgreSql\LuminaBrain.EntityFrameCore.PostgreSql.csproj", "{D72740C5-6DC3-4D09-BFA5-F68A7CB0F649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminaBrain.HostApi.Host", "LuminaBrain.HostApi.Host\LuminaBrain.HostApi.Host.csproj", "{95646642-C9AF-4070-B3D0-B1BC79F3DADA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminaBrain.HttpApi", "LuminaBrain.HttpApi\LuminaBrain.HttpApi.csproj", "{15E4942C-E0BE-46AE-A557-A28AEB857062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminaBrain.Application", "LuminaBrain.Application\LuminaBrain.Application.csproj", "{47CCC059-C1AC-4E80-BC15-F7F7BCF77653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuminaBrain.Application.Service", "LuminaBrain.Application.Service\LuminaBrain.Application.Service.csproj", "{2BDC8810-8FE8-4C6E-B2F8-5B4BB5315403}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +37,8 @@ Global
 		{9C407E55-ECFF-4E39-A50F-054A7FBBF517} = {55D39EBC-9458-438C-802F-77042584350B}
 		{F6A7FC92-4FE9-4818-A9BA-993D3C09BCBC} = {9C407E55-ECFF-4E39-A50F-054A7FBBF517}
 		{9797A679-C2FF-425A-9963-34C9431F1649} = {9C407E55-ECFF-4E39-A50F-054A7FBBF517}
+		{29C11F24-7F08-4CB9-B8F9-3DE69DA6CFD1} = {C65DA5AA-2C20-442C-8658-AC2F0B8B7464}
+		{D72740C5-6DC3-4D09-BFA5-F68A7CB0F649} = {C65DA5AA-2C20-442C-8658-AC2F0B8B7464}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{92A5174C-1C98-4D09-AC0E-9CB2D8235E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -43,5 +57,29 @@ Global
 		{E47A5831-634D-4C7E-B0CB-C821C66D5DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E47A5831-634D-4C7E-B0CB-C821C66D5DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E47A5831-634D-4C7E-B0CB-C821C66D5DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C11F24-7F08-4CB9-B8F9-3DE69DA6CFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C11F24-7F08-4CB9-B8F9-3DE69DA6CFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C11F24-7F08-4CB9-B8F9-3DE69DA6CFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C11F24-7F08-4CB9-B8F9-3DE69DA6CFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72740C5-6DC3-4D09-BFA5-F68A7CB0F649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72740C5-6DC3-4D09-BFA5-F68A7CB0F649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72740C5-6DC3-4D09-BFA5-F68A7CB0F649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72740C5-6DC3-4D09-BFA5-F68A7CB0F649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95646642-C9AF-4070-B3D0-B1BC79F3DADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95646642-C9AF-4070-B3D0-B1BC79F3DADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95646642-C9AF-4070-B3D0-B1BC79F3DADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95646642-C9AF-4070-B3D0-B1BC79F3DADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E4942C-E0BE-46AE-A557-A28AEB857062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E4942C-E0BE-46AE-A557-A28AEB857062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E4942C-E0BE-46AE-A557-A28AEB857062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E4942C-E0BE-46AE-A557-A28AEB857062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47CCC059-C1AC-4E80-BC15-F7F7BCF77653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CCC059-C1AC-4E80-BC15-F7F7BCF77653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CCC059-C1AC-4E80-BC15-F7F7BCF77653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CCC059-C1AC-4E80-BC15-F7F7BCF77653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDC8810-8FE8-4C6E-B2F8-5B4BB5315403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDC8810-8FE8-4C6E-B2F8-5B4BB5315403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDC8810-8FE8-4C6E-B2F8-5B4BB5315403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDC8810-8FE8-4C6E-B2F8-5B4BB5315403}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

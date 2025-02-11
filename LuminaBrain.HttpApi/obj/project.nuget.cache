@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "58OnVH5jIE0=",
+  "success": true,
+  "projectFilePath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.HttpApi\\LuminaBrain.HttpApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Austin_Zhang\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.10\\microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
+    "C:\\Users\\Austin_Zhang\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.1\\microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512",
+    "C:\\Users\\Austin_Zhang\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512"
+  ],
+  "logs": []
+}
