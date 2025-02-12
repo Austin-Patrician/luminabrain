@@ -1,4 +1,4 @@
-﻿using LuminadBrain.Entity.Powers.Aggregates;
+﻿using LuminaBrain.Domain.Powers.Aggregates;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LuminaBrain.EntityFrameworkCore.TableStructure;

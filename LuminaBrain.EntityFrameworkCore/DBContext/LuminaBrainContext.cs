@@ -1,9 +1,8 @@
 using FastWiki.Domain.Powers.Aggregates;
-using FastWiki.Domain.Users.Aggregates;
 using LuminaBrain.Core;
 using LuminaBrain.Data.Auditing;
-using LuminadBrain.Entity.Powers.Aggregates;
-using LuminadBrain.Entity.Users.Aggregates;
+using LuminaBrain.Domain.Powers.Aggregates;
+using LuminaBrain.Domain.Users.Aggregates;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LuminaBrain.EntityFrameworkCore.DBContext;

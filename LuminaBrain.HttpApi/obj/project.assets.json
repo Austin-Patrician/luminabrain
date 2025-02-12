@@ -50,6 +50,19 @@
           }
         }
       },
+      "LuminaBrain.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "LuminaBrain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LuminaBrain.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LuminaBrain.Application.dll": {}
+        }
+      },
       "LuminaBrain.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -132,6 +145,11 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "LuminaBrain.Application/1.0.0": {
+      "type": "project",
+      "path": "../LuminaBrain.Application/LuminaBrain.Application.csproj",
+      "msbuildProject": "../LuminaBrain.Application/LuminaBrain.Application.csproj"
+    },
     "LuminaBrain.Core/1.0.0": {
       "type": "project",
       "path": "../LuminaBrain.Core/LuminaBrain.Core.csproj",
@@ -145,6 +163,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "LuminaBrain.Application >= 1.0.0",
       "LuminaBrain.Core >= 1.0.0",
       "LuminaBrain.Data >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.10",
@@ -152,44 +171,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Austin_Zhang\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/aa123456/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\code\\Austin\\luminabrain\\LuminaBrain.HttpApi\\LuminaBrain.HttpApi.csproj",
+      "projectUniqueName": "/Users/aa123456/code/net/luminabrain/LuminaBrain.HttpApi/LuminaBrain.HttpApi.csproj",
       "projectName": "LuminaBrain.HttpApi",
-      "projectPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.HttpApi\\LuminaBrain.HttpApi.csproj",
-      "packagesPath": "C:\\Users\\Austin_Zhang\\.nuget\\packages\\",
-      "outputPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.HttpApi\\obj\\",
+      "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.HttpApi/LuminaBrain.HttpApi.csproj",
+      "packagesPath": "/Users/aa123456/.nuget/packages/",
+      "outputPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.HttpApi/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Austin_Zhang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/aa123456/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://devops.rspinternal.com/repository/nuget-group/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "F:\\code\\Austin\\luminabrain\\LuminaBrain.Core\\LuminaBrain.Core.csproj": {
-              "projectPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.Core\\LuminaBrain.Core.csproj"
+            "/Users/aa123456/code/net/luminabrain/LuminaBrain.Application/LuminaBrain.Application.csproj": {
+              "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Application/LuminaBrain.Application.csproj"
             },
-            "F:\\code\\Austin\\luminabrain\\LuminaBrain.Data\\LuminaBrain.Data.csproj": {
-              "projectPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.Data\\LuminaBrain.Data.csproj"
+            "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/LuminaBrain.Core.csproj": {
+              "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/LuminaBrain.Core.csproj"
+            },
+            "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/LuminaBrain.Data.csproj": {
+              "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/LuminaBrain.Data.csproj"
             }
           }
         }
@@ -235,7 +248,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/aa123456/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

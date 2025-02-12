@@ -13,12 +13,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\LuminaBrain.Application\LuminaBrain.Application.csproj" />
       <ProjectReference Include="..\LuminaBrain.Core\LuminaBrain.Core.csproj" />
       <ProjectReference Include="..\LuminaBrain.Data\LuminaBrain.Data.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Endpoints\" />
     </ItemGroup>
 
 </Project>

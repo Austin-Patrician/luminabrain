@@ -1,6 +1,5 @@
-﻿using FastWiki.Domain.Users.Aggregates;
-using LuminaBrain.Core;
-using LuminadBrain.Entity.Users.Aggregates;
+﻿using LuminaBrain.Core;
+using LuminaBrain.Domain.Users.Aggregates;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LuminaBrain.EntityFrameworkCore.TableStructure;

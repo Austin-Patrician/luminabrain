@@ -1,6 +1,6 @@
-﻿using FastWiki.Domain.Users.Aggregates;
+﻿using LuminaBrain.Domain.Users.Aggregates;
+using LuminaBrain.Domain.Users.Repositories;
 using LuminaBrain.EntityFrameworkCore.DBContext;
-using LuminadBrain.Entity.Users.Repositories;
 
 namespace LuminaBrain.EntityFrameworkCore.Repositories;
 

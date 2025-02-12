@@ -1,6 +1,6 @@
-﻿using LuminaBrain.EntityFrameworkCore.Repositories;
-using LuminadBrain.Entity.Powers.Repositories;
-using LuminadBrain.Entity.Users.Repositories;
+﻿using LuminaBrain.Domain.Powers.Repositories;
+using LuminaBrain.Domain.Users.Repositories;
+using LuminaBrain.EntityFrameworkCore.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LuminaBrain.EntityFrameworkCore;

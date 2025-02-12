@@ -1,11 +1,16 @@
-﻿using FastWiki.Application.Contract.Powers;
+﻿using EasyLife.AutoInject.Attributes;
+using FastWiki.Application.Contract.Powers;
 using FastWiki.Application.Contract.Powers.Dto;
 using FastWiki.Application.Contract.Powers.Input;
+using FastWiki.Domain.Powers.Aggregates;
 using LuminaBrain.Core.Exceptions;
+using LuminaBrain.Domain.Powers.Repositories;
+using MapsterMapper;
 
 namespace LuminaBrain.Application.Service.Powers;
 
-public class PowersService(IRoleRepository roleRepository, IMapper mapper) : IPowersService, IScopeDependency
+[AutoInject<IPowersService>]
+public class PowersService(IRoleRepository roleRepository, IMapper mapper) : IPowersService
 {
     public async Task CreateRoleAsync(RoleInput input)
     {
@@ -40,6 +45,10 @@ public class PowersService(IRoleRepository roleRepository, IMapper mapper) : IPo
         await roleRepository.DeleteAsync(role);
     }
 
+    /// <summary>
+    /// 获取所有的role
+    /// </summary>
+    /// <returns></returns>
     public async Task<List<RoleDto>> GetRolesAsync()
     {
         var roles = await roleRepository.ListAsync();

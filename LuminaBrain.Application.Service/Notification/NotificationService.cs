@@ -1,9 +1,12 @@
-﻿using FastWiki.Application.Contract.Notification;
+﻿using EasyLife.AutoInject.Attributes;
+using FastWiki.Application.Contract.Notification;
 using FastWiki.Application.Contract.Notification.Dto;
+using Lazy.Captcha.Core;
 
 namespace LuminaBrain.Application.Service.Notification;
 
-public class NotificationService(ICaptcha captcha) : INotificationService, IScopeDependency
+[AutoInject<INotificationService>]
+public class NotificationService(ICaptcha captcha) : INotificationService
 {
     public Task<VerificationDto> GetLoginVerificationCodeAsync()
     {

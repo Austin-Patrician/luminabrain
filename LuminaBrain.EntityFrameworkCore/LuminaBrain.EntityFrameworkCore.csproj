@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\LuminadBrain.Entity\LuminadBrain.Entity.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Domain\LuminaBrain.Domain.csproj" />
     </ItemGroup>
 
 </Project>

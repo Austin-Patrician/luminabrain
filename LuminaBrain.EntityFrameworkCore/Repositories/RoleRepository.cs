@@ -1,7 +1,8 @@
 ﻿using FastWiki.Domain.Powers.Aggregates;
+using LuminaBrain.Domain.Powers.Aggregates;
+using LuminaBrain.Domain.Powers.Repositories;
 using LuminaBrain.EntityFrameworkCore.DBContext;
-using LuminadBrain.Entity.Powers.Aggregates;
-using LuminadBrain.Entity.Powers.Repositories;
+
 
 namespace LuminaBrain.EntityFrameworkCore.Repositories;
 

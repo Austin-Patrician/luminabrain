@@ -285,11 +285,36 @@
           "bin/placeholder/LuminaBrain.Data.dll": {}
         }
       },
+      "LuminaBrain.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "LuminaBrain.Core": "1.0.0",
+          "LuminaBrain.Data": "1.0.0",
+          "LuminaBrain.Domain.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LuminaBrain.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LuminaBrain.Domain.dll": {}
+        }
+      },
+      "LuminaBrain.Domain.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/LuminaBrain.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LuminaBrain.Domain.Shared.dll": {}
+        }
+      },
       "LuminaBrain.EntityFrameworkCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "LuminadBrain.Entity": "1.0.0",
+          "LuminaBrain.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "9.0.0"
         },
@@ -298,20 +323,6 @@
         },
         "runtime": {
           "bin/placeholder/LuminaBrain.EntityFrameworkCore.dll": {}
-        }
-      },
-      "LuminadBrain.Entity/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "LuminaBrain.Core": "1.0.0",
-          "LuminaBrain.Data": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/LuminadBrain.Entity.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/LuminadBrain.Entity.dll": {}
         }
       }
     }
@@ -737,15 +748,20 @@
       "path": "../LuminaBrain.Data/LuminaBrain.Data.csproj",
       "msbuildProject": "../LuminaBrain.Data/LuminaBrain.Data.csproj"
     },
+    "LuminaBrain.Domain/1.0.0": {
+      "type": "project",
+      "path": "../LuminaBrain.Domain/LuminaBrain.Domain.csproj",
+      "msbuildProject": "../LuminaBrain.Domain/LuminaBrain.Domain.csproj"
+    },
+    "LuminaBrain.Domain.Shared/1.0.0": {
+      "type": "project",
+      "path": "../LuminaBrain.Domain.Shared/LuminaBrain.Domain.Shared.csproj",
+      "msbuildProject": "../LuminaBrain.Domain.Shared/LuminaBrain.Domain.Shared.csproj"
+    },
     "LuminaBrain.EntityFrameworkCore/1.0.0": {
       "type": "project",
       "path": "../LuminaBrain.EntityFrameworkCore/LuminaBrain.EntityFrameworkCore.csproj",
       "msbuildProject": "../LuminaBrain.EntityFrameworkCore/LuminaBrain.EntityFrameworkCore.csproj"
-    },
-    "LuminadBrain.Entity/1.0.0": {
-      "type": "project",
-      "path": "../LuminadBrain.Entity/LuminadBrain.Entity.csproj",
-      "msbuildProject": "../LuminadBrain.Entity/LuminadBrain.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -757,47 +773,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Austin_Zhang\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/aa123456/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\code\\Austin\\luminabrain\\LuminaBrain.EntityFrameCore.PostgreSql\\LuminaBrain.EntityFrameCore.PostgreSql.csproj",
+      "projectUniqueName": "/Users/aa123456/code/net/luminabrain/LuminaBrain.EntityFrameCore.PostgreSql/LuminaBrain.EntityFrameCore.PostgreSql.csproj",
       "projectName": "LuminaBrain.EntityFrameCore.PostgreSql",
-      "projectPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.EntityFrameCore.PostgreSql\\LuminaBrain.EntityFrameCore.PostgreSql.csproj",
-      "packagesPath": "C:\\Users\\Austin_Zhang\\.nuget\\packages\\",
-      "outputPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.EntityFrameCore.PostgreSql\\obj\\",
+      "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.EntityFrameCore.PostgreSql/LuminaBrain.EntityFrameCore.PostgreSql.csproj",
+      "packagesPath": "/Users/aa123456/.nuget/packages/",
+      "outputPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.EntityFrameCore.PostgreSql/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Austin_Zhang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/aa123456/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://devops.rspinternal.com/repository/nuget-group/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "F:\\code\\Austin\\luminabrain\\LuminaBrain.Core\\LuminaBrain.Core.csproj": {
-              "projectPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.Core\\LuminaBrain.Core.csproj"
+            "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/LuminaBrain.Core.csproj": {
+              "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/LuminaBrain.Core.csproj"
             },
-            "F:\\code\\Austin\\luminabrain\\LuminaBrain.Data\\LuminaBrain.Data.csproj": {
-              "projectPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.Data\\LuminaBrain.Data.csproj"
+            "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/LuminaBrain.Data.csproj": {
+              "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/LuminaBrain.Data.csproj"
             },
-            "F:\\code\\Austin\\luminabrain\\LuminaBrain.EntityFrameworkCore\\LuminaBrain.EntityFrameworkCore.csproj": {
-              "projectPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.EntityFrameworkCore\\LuminaBrain.EntityFrameworkCore.csproj"
+            "/Users/aa123456/code/net/luminabrain/LuminaBrain.EntityFrameworkCore/LuminaBrain.EntityFrameworkCore.csproj": {
+              "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.EntityFrameworkCore/LuminaBrain.EntityFrameworkCore.csproj"
             }
           }
         }
@@ -839,7 +846,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/aa123456/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

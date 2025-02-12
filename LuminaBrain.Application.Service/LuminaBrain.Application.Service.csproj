@@ -8,6 +8,20 @@
 
     <ItemGroup>
       <ProjectReference Include="..\LuminaBrain.Application\LuminaBrain.Application.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Domain\LuminaBrain.Domain.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Jwt\LuminaBrain.Jwt.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="EasyLife.AutoInject" Version="1.0.4" />
+      <PackageReference Include="EasyLife.AutoInject.Attributes" Version="1.0.0" />
+      <PackageReference Include="Lazy.Captcha.Core" Version="2.1.0" />
+      <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="OpenAI\" />
     </ItemGroup>
 
 </Project>

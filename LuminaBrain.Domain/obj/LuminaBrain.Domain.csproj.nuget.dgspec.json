@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain/LuminaBrain.Domain.csproj": {}
+  },
+  "projects": {
+    "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/LuminaBrain.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/LuminaBrain.Core.csproj",
+        "projectName": "LuminaBrain.Core",
+        "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/LuminaBrain.Core.csproj",
+        "packagesPath": "/Users/aa123456/.nuget/packages/",
+        "outputPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aa123456/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/aa123456/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/LuminaBrain.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/LuminaBrain.Data.csproj",
+        "projectName": "LuminaBrain.Data",
+        "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/LuminaBrain.Data.csproj",
+        "packagesPath": "/Users/aa123456/.nuget/packages/",
+        "outputPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aa123456/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/aa123456/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain.Shared/LuminaBrain.Domain.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain.Shared/LuminaBrain.Domain.Shared.csproj",
+        "projectName": "LuminaBrain.Domain.Shared",
+        "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain.Shared/LuminaBrain.Domain.Shared.csproj",
+        "packagesPath": "/Users/aa123456/.nuget/packages/",
+        "outputPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aa123456/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/aa123456/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain/LuminaBrain.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain/LuminaBrain.Domain.csproj",
+        "projectName": "LuminaBrain.Domain",
+        "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain/LuminaBrain.Domain.csproj",
+        "packagesPath": "/Users/aa123456/.nuget/packages/",
+        "outputPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aa123456/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/LuminaBrain.Core.csproj": {
+                "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Core/LuminaBrain.Core.csproj"
+              },
+              "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/LuminaBrain.Data.csproj": {
+                "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Data/LuminaBrain.Data.csproj"
+              },
+              "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain.Shared/LuminaBrain.Domain.Shared.csproj": {
+                "projectPath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.Domain.Shared/LuminaBrain.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/aa123456/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

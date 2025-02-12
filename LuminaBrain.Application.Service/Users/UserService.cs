@@ -1,11 +1,19 @@
-﻿using FastWiki.Core;
-using FastWiki.Domain.Users.Aggregates;
+﻿using EasyLife.AutoInject.Attributes;
+using LuminaBrain.Application.Users;
+using LuminaBrain.Application.Users.Dto;
+using LuminaBrain.Application.Users.Input;
+using LuminaBrain.Core;
+using LuminaBrain.Core.Exceptions;
+using LuminaBrain.Core.Model;
+using LuminaBrain.Domain.Users.Aggregates;
+using LuminaBrain.Domain.Users.Repositories;
 using MapsterMapper;
 
-namespace FastWiki.Application.Users;
+namespace LuminaBrain.Application.Service.Users;
 
+[AutoInject<IUserService>]
 public class UserService(IUserRepository userRepository, IMapper mapper, IUserContext userContext)
-    : IUserService, IScopeDependency
+    : IUserService
 {
     public async Task<string> CreateAsync(CreateUserInput input)
     {
