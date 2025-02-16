@@ -1,4 +1,4 @@
-﻿namespace FastWiki.Application.Contract.Powers.Dto;
+﻿namespace LuminaBrain.Application.Powers.Dto;
 
 public class RoleDto
 {

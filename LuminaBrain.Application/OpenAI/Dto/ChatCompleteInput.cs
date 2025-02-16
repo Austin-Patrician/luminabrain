@@ -1,4 +1,4 @@
-﻿namespace FastWiki.Application.Contract.OpenAI.Dto;
+﻿namespace LuminaBrain.Application.OpenAI.Dto;
 
 public class ChatCompleteInput
 {

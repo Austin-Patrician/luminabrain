@@ -1,4 +1,4 @@
-﻿namespace FastWiki.Application.Contract.Powers.Input;
+﻿namespace LuminaBrain.Application.Powers.Input;
 
 public class RoleInput
 {

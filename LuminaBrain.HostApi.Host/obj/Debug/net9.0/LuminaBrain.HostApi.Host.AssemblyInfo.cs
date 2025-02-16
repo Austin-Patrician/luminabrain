@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LuminaBrain.HostApi.Host")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63f5e069d224f00d538d7b8f5ffecb5599b4ee73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84378f8e34218b803fb755618e57b9f7589000cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("LuminaBrain.HostApi.Host")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LuminaBrain.HostApi.Host")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

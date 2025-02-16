@@ -1,6 +1,6 @@
 ﻿using FastWiki.Application.Contract.Notification.Dto;
 
-namespace FastWiki.Application.Contract.Notification;
+namespace LuminaBrain.Application.Notification;
 
 public interface INotificationService
 {
