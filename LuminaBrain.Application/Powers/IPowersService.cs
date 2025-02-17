@@ -1,7 +1,7 @@
-﻿using FastWiki.Application.Contract.Powers.Dto;
-using FastWiki.Application.Contract.Powers.Input;
+﻿using LuminaBrain.Application.Powers.Dto;
+using LuminaBrain.Application.Powers.Input;
 
-namespace FastWiki.Application.Contract.Powers;
+namespace LuminaBrain.Application.Powers;
 
 public interface IPowersService
 {

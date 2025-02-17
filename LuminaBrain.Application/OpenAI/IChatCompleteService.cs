@@ -1,6 +1,6 @@
-﻿using FastWiki.Application.Contract.OpenAI.Dto;
+﻿using LuminaBrain.Application.OpenAI.Dto;
 
-namespace FastWiki.Application.Contract.OpenAI;
+namespace LuminaBrain.Application.OpenAI;
 
 public interface IChatCompleteService
 {

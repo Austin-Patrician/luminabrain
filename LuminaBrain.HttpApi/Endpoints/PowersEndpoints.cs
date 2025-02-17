@@ -1,7 +1,7 @@
 ﻿// PowersEndpoints.cs
 
-using FastWiki.Application.Contract.Powers;
-using FastWiki.Application.Contract.Powers.Input;
+using LuminaBrain.Application.Powers;
+using LuminaBrain.Application.Powers.Input;
 using LuminaBrain.HttpApi.Filter;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;

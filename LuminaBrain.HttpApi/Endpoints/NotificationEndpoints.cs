@@ -1,4 +1,5 @@
 ﻿using FastWiki.Application.Contract.Notification;
+using LuminaBrain.Application.Notification;
 using LuminaBrain.HttpApi.Filter;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -21,7 +22,7 @@ public static class NotificationEndpoints
 
         notification.MapPost("register-verification-code",
                 [EndpointSummary("获取注册验证码"), EndpointDescription("获取注册验证码")]
-                async (INotificationService service, string account) =>
+                async (INotificationService service, string account,IFormFile file) =>
                     await service.GetRegisterVerificationCodeAsync(account));
 
         return endpoint;

@@ -1,8 +1,8 @@
 ﻿using EasyLife.AutoInject.Attributes;
-using FastWiki.Application.Contract.Powers;
-using FastWiki.Application.Contract.Powers.Dto;
-using FastWiki.Application.Contract.Powers.Input;
 using FastWiki.Domain.Powers.Aggregates;
+using LuminaBrain.Application.Powers;
+using LuminaBrain.Application.Powers.Dto;
+using LuminaBrain.Application.Powers.Input;
 using LuminaBrain.Core.Exceptions;
 using LuminaBrain.Domain.Powers.Repositories;
 using MapsterMapper;

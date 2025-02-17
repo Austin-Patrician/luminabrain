@@ -1,6 +1,6 @@
-using FastWiki.Application.Contract.Notification;
-using FastWiki.Application.Contract.Powers;
 using LuminaBrain.Application.Authorization;
+using LuminaBrain.Application.Notification;
+using LuminaBrain.Application.Powers;
 using LuminaBrain.Application.Service.Authorization;
 using LuminaBrain.Application.Service.Notification;
 using LuminaBrain.Application.Service.Powers;

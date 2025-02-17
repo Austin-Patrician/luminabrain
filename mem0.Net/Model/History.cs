@@ -1,0 +1,22 @@
+﻿namespace mem0.Net.Model;
+
+public class History
+{
+    public Guid Id { get; set; }
+
+    public string MemoryId { get; set; }
+
+    public string PrevValue { get; set; }
+
+    public string NewValue { get; set; }
+
+    public string Event { get; set; }
+
+    public DateTime DateTime { get; set; }
+
+    public bool IsDeleted { get; set; }
+    
+    public string? UserId { get; set; }
+    
+    public string? TrackId { get; set; }
+}

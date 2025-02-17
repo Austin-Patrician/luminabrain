@@ -2,6 +2,7 @@
 using FastWiki.Application.Contract.Notification;
 using FastWiki.Application.Contract.Notification.Dto;
 using Lazy.Captcha.Core;
+using LuminaBrain.Application.Notification;
 
 namespace LuminaBrain.Application.Service.Notification;
 
