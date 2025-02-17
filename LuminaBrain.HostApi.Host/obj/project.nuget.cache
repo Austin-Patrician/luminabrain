@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Gb001Rsy6SM=",
+  "dgSpecHash": "pYJf8/29TlY=",
   "success": true,
-  "projectFilePath": "/Users/aa123456/code/net/luminabrain/LuminaBrain.HostApi.Host/LuminaBrain.HostApi.Host.csproj",
+  "projectFilePath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.HostApi.Host\\LuminaBrain.HostApi.Host.csproj",
   "expectedPackageFiles": [
-    "/Users/aa123456/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
-    "/Users/aa123456/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+    "C:\\Users\\Austin_Zhang\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\Austin_Zhang\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
   ],
   "logs": []
 }
