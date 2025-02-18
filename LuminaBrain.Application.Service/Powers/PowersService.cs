@@ -9,7 +9,6 @@ using MapsterMapper;
 
 namespace LuminaBrain.Application.Service.Powers;
 
-[AutoInject<IPowersService>]
 public class PowersService(IRoleRepository roleRepository, IMapper mapper) : IPowersService
 {
     public async Task CreateRoleAsync(RoleInput input)

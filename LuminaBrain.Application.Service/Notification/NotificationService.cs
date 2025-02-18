@@ -6,7 +6,6 @@ using LuminaBrain.Application.Notification;
 
 namespace LuminaBrain.Application.Service.Notification;
 
-[AutoInject<INotificationService>]
 public class NotificationService(ICaptcha captcha) : INotificationService
 {
     public Task<VerificationDto> GetLoginVerificationCodeAsync()

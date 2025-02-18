@@ -11,7 +11,6 @@ using MapsterMapper;
 
 namespace LuminaBrain.Application.Service.Users;
 
-[AutoInject<IUserService>]
 public class UserService(IUserRepository userRepository, IMapper mapper, IUserContext userContext)
     : IUserService
 {
