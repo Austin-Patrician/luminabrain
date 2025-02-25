@@ -3,7 +3,7 @@ using LuminaBrain.Application.UploadFile.Input;
 
 namespace LuminaBrain.Application.Service.UploadFile;
 
-public class UploadService : IUploadService
+public class UploadService(IServiceProvider serviceProvider) : IUploadService
 {
     private const long MaxFileSize = 2 * 1024 * 1024; // 限制文件大小为 2MB
     

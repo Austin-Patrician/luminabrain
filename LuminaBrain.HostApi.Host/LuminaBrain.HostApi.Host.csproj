@@ -8,6 +8,27 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
+        <PackageReference Include="Scalar.AspNetCore" Version="2.0.18" />
+        <PackageReference Include="tusdotnet" Version="2.8.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Logs\" />
+      <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\LuminaBrain.Application.Service\LuminaBrain.Application.Service.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Application\LuminaBrain.Application.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Core\LuminaBrain.Core.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Data\LuminaBrain.Data.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Domain.Shared\LuminaBrain.Domain.Shared.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Domain\LuminaBrain.Domain.csproj" />
+      <ProjectReference Include="..\LuminaBrain.EntityFrameCore.PostgreSql\LuminaBrain.EntityFrameCore.PostgreSql.csproj" />
+      <ProjectReference Include="..\LuminaBrain.EntityFramework.SqlServer\LuminaBrain.EntityFramework.SqlServer.csproj" />
+      <ProjectReference Include="..\LuminaBrain.EntityFrameworkCore\LuminaBrain.EntityFrameworkCore.csproj" />
+      <ProjectReference Include="..\LuminaBrain.HttpApi\LuminaBrain.HttpApi.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Jwt\LuminaBrain.Jwt.csproj" />
     </ItemGroup>
 
 </Project>
