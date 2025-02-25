@@ -137,9 +137,57 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
+            "Microsoft.KernelMemory.AI.OpenAI": {
+              "target": "Package",
+              "version": "[0.97.250211.1, )"
+            },
+            "Microsoft.KernelMemory.Core": {
+              "target": "Package",
+              "version": "[0.97.250211.1, )"
+            },
+            "Microsoft.KernelMemory.MemoryDb.Qdrant": {
+              "target": "Package",
+              "version": "[0.97.250211.1, )"
+            },
+            "Microsoft.KernelMemory.SemanticKernelPlugin": {
+              "target": "Package",
+              "version": "[0.97.250211.1, )"
+            },
             "Microsoft.SemanticKernel": {
               "target": "Package",
               "version": "[1.37.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "OpenCvSharp4.runtime.win": {
+              "target": "Package",
+              "version": "[4.9.0.20240103, )"
+            },
+            "Sdcb.OpenCvSharp4.mini.runtime.debian.12-x64": {
+              "target": "Package",
+              "version": "[4.8.0.20231125, )"
+            },
+            "Sdcb.OpenVINO": {
+              "target": "Package",
+              "version": "[0.6.6, )"
+            },
+            "Sdcb.OpenVINO.PaddleOCR": {
+              "target": "Package",
+              "version": "[0.6.3, )"
+            },
+            "Sdcb.OpenVINO.PaddleOCR.Models.Online": {
+              "target": "Package",
+              "version": "[0.6.2, )"
+            },
+            "Sdcb.OpenVINO.runtime.ubuntu.22.04-x64": {
+              "target": "Package",
+              "version": "[2024.2.0, )"
+            },
+            "Sdcb.OpenVINO.runtime.win-x64": {
+              "target": "Package",
+              "version": "[2024.2.0, )"
             }
           },
           "imports": [

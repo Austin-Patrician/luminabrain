@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LuminaBrain.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5aa8ebe7e74d9d36021ac65dd5a4d9e7b4bb869")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b5d538738ba35cea405af6bfd7bdecd56157413")]
 [assembly: System.Reflection.AssemblyProductAttribute("LuminaBrain.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LuminaBrain.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

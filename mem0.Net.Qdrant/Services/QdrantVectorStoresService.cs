@@ -47,33 +47,29 @@ public class QdrantVectorStoresService(QdrantClient client) : IVectorStoreServic
 
             foreach (var payload in payloads[index])
             {
-                if (payload.Value is string str)
+                switch (payload.Value)
                 {
-                    item.Payload.Add(payload.Key, str);
-                }
-                else if (payload.Value is float f)
-                {
-                    item.Payload.Add(payload.Key, f);
-                }
-                else if (payload.Value is int i)
-                {
-                    item.Payload.Add(payload.Key, i);
-                }
-                else if (payload.Value is bool b)
-                {
-                    item.Payload.Add(payload.Key, b);
-                }
-                else if (payload.Value is Color color)
-                {
-                    item.Payload.Add(payload.Key, color.ToArgb());
-                }
-                else if (payload.Value is DateTime dateTime)
-                {
-                    item.Payload.Add(payload.Key, dateTime.ToString("yyyy-MM-dd HH:mm:ss"));
-                }
-                else
-                {
-                    item.Payload.Add(payload.Key, JsonSerializer.Serialize(payload.Value));
+                    case string str:
+                        item.Payload.Add(payload.Key, str);
+                        break;
+                    case float f:
+                        item.Payload.Add(payload.Key, f);
+                        break;
+                    case int i:
+                        item.Payload.Add(payload.Key, i);
+                        break;
+                    case bool b:
+                        item.Payload.Add(payload.Key, b);
+                        break;
+                    case Color color:
+                        item.Payload.Add(payload.Key, color.ToArgb());
+                        break;
+                    case DateTime dateTime:
+                        item.Payload.Add(payload.Key, dateTime.ToString("yyyy-MM-dd HH:mm:ss"));
+                        break;
+                    default:
+                        item.Payload.Add(payload.Key, JsonSerializer.Serialize(payload.Value));
+                        break;
                 }
             }
 
