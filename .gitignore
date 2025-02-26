@@ -6,3 +6,65 @@ riderModule.iml
 /.vs
 /.idea
 *.cache
+# .NET Core / ASP.NET Core 相关
+
+*.csproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.cache
+*.log
+*.vs/
+*.vscode/
+*.VisualState.xml
+
+# Rider IDE 相关
+.idea/
+*.iml
+
+# 构建输出
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rchive/
+
+# 日志文件
+logs/
+*.log
+*.log.*
+
+# 临时文件
+*~
+*.swp
+*.tmp
+*.bak
+
+# 依赖包
+packages/
+nuget.exe
+*.nupkg
+
+# 配置文件中的敏感信息
+appsettings.json
+appsettings.*.json
+secrets.json
+
+# 测试相关
+[Tt]est[Rr]esult*/
+coverage.*
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 其他
+node_modules/
+dist/
+wwwroot/lib/
