@@ -1,6 +1,8 @@
-﻿namespace mem0.Net.KM;
+﻿using LuminaBrain.Application.KM.Dto;
+
+namespace mem0.Net.KM;
 
 public interface IImportKmsService
 {
-    void ImportKmsTask();
+    void ImportKmsTask(ImportKmsTaskReq req);
 }

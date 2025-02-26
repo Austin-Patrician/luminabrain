@@ -1,8 +1,11 @@
-﻿using mem0.NET;
+﻿using LuminaBrain.Domain.Chat.Aggregates;
+using LuminaBrain.Domain.Model.Constant;
+using mem0.NET;
 using mem0.Net.KM;
 using mem0.Net.OCR;
 using Microsoft.KernelMemory;
 using Microsoft.KernelMemory.Configuration;
+using Microsoft.KernelMemory.MemoryStorage;
 
 namespace mem0.Net.Qdrant.Services;
 
@@ -12,23 +15,23 @@ public class KMService : IKMService
     {
         var memoryBuild = new KernelMemoryBuilder().WithOpenAIDefaults("")
             .WithCustomTextPartitioningOptions(new TextPartitioningOptions());
-        
+
         var handler = new OpenAIHttpClientHandler("");
         var httpClient = new HttpClient(handler);
         httpClient.Timeout = TimeSpan.FromMinutes(10);
-        
+
         WithOcr(memoryBuild);
         //加载会话模型
-        WithTextGenerationByAiType(memoryBuild,httpClient);
+        WithTextGenerationByAiType(memoryBuild, httpClient);
         //加载向量模型
-        WithTextEmbeddingGenerationByAiType(memoryBuild,httpClient);
+        WithTextEmbeddingGenerationByAiType(memoryBuild, httpClient);
         //加载向量库
         WithMemoryDbByVectorDb(memoryBuild);
 
         return memoryBuild.Build<MemoryServerless>();
     }
 
-    private void WithTextGenerationByAiType(IKernelMemoryBuilder memory,HttpClient chatHttpClient)
+    private void WithTextGenerationByAiType(IKernelMemoryBuilder memory, HttpClient chatHttpClient)
     {
         memory.WithOpenAITextGeneration(new OpenAIConfig
         {
@@ -42,13 +45,13 @@ public class KMService : IKMService
         memory.WithQdrantMemoryDb("");
     }
 
-    private void WithTextEmbeddingGenerationByAiType(IKernelMemoryBuilder memory,HttpClient embeddingHttpClient)
+    private void WithTextEmbeddingGenerationByAiType(IKernelMemoryBuilder memory, HttpClient embeddingHttpClient)
     {
         memory.WithOpenAITextEmbeddingGeneration(new OpenAIConfig()
         {
             APIKey = "",
             EmbeddingModel = "",
-        },null, false, embeddingHttpClient);
+        }, null, false, embeddingHttpClient);
     }
 
 
@@ -57,9 +60,37 @@ public class KMService : IKMService
         memoryBuild.WithCustomImageOcr(new AntSkOcrEngine());
     }
 
+    public async Task<List<KMFile>> GetDocumentByFileID(string fileId)
+    {
+        var memory = GetMemoryByKms();
+        var memories = await memory.ListIndexesAsync();
+        var memoryDbs = memory.Orchestrator.GetMemoryDbs();
+        var docTextList = new List<KMFile>();
+
+        foreach (var memoryIndex in memories)
+        {
+            foreach (var memoryDb in memoryDbs)
+            {
+                var items = await memoryDb.GetListAsync(memoryIndex.Name,
+                    new List<MemoryFilter>() { new MemoryFilter().ByDocument(fileId) }, 1000, true).ToListAsync();
+                docTextList.AddRange(items.Select(item => new KMFile()
+                {
+                    DocumentId = item.GetDocumentId(),
+                    Text = item.GetPartitionText(),
+                    Url = item.GetWebPageUrl(KmsConstantcs.KmsIndex),
+                    LastUpdate = item.GetLastUpdate().LocalDateTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                    File = item.GetFileName()
+                }));
+            }
+        }
+
+        return docTextList;
+    }
+
     public bool BeforeUpload()
     {
-        List<string> types = new List<string>() {
+        List<string> types = new List<string>()
+        {
             "text/plain",
             "application/msword",
             "application/vnd.openxmlformats-officedocument.wordprocessingml.document",

@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\LuminaBrain.Core\LuminaBrain.Core.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Domain\LuminaBrain.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>

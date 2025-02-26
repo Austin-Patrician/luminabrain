@@ -23,4 +23,9 @@
         <PackageReference Include="Sdcb.OpenVINO.runtime.ubuntu.22.04-x64" Version="2024.2.0" />
         <PackageReference Include="Sdcb.OpenVINO.runtime.win-x64" Version="2024.2.0" />
     </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\LuminaBrain.Application\LuminaBrain.Application.csproj" />
+      <ProjectReference Include="..\LuminaBrain.Domain\LuminaBrain.Domain.csproj" />
+    </ItemGroup>
 </Project>

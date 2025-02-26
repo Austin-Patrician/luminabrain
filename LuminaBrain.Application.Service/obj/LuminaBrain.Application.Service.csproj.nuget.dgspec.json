@@ -135,6 +135,9 @@
             "projectReferences": {
               "F:\\code\\Austin\\luminabrain\\LuminaBrain.Core\\LuminaBrain.Core.csproj": {
                 "projectPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.Core\\LuminaBrain.Core.csproj"
+              },
+              "F:\\code\\Austin\\luminabrain\\LuminaBrain.Domain\\LuminaBrain.Domain.csproj": {
+                "projectPath": "F:\\code\\Austin\\luminabrain\\LuminaBrain.Domain\\LuminaBrain.Domain.csproj"
               }
             }
           }
@@ -438,6 +441,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.7.2, )"
+            },
+            "System.Memory.Data": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

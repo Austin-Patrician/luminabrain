@@ -12,6 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\LuminaBrain.Application\LuminaBrain.Application.csproj" />
       <ProjectReference Include="..\mem0.Net\mem0.Net.csproj" />
     </ItemGroup>
 </Project>
